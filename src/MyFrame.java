@@ -15,7 +15,6 @@ public class MyFrame extends JFrame implements KeyListener{
 
         image = new ImageIcon(getClass().getResource("rocketSmall.png"));
 
-
         label = new JLabel(image);
         label.setBounds(0, 0, 320, 320);
 
@@ -23,6 +22,7 @@ public class MyFrame extends JFrame implements KeyListener{
         //label.setOpaque(true);
 
         this.getContentPane().setBackground(Color.black);
+        this.setTitle("Java KeyListener");
         this.add(label);
         this.setVisible(true);
     }
